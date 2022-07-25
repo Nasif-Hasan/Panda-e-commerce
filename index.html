@@ -7,9 +7,12 @@
     <title>Panda e-Commerce</title>
 
     <!-- Bootstrap Link -->
-
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx" crossorigin="anonymous">
+
+    <!-- Custom Css Link -->
+    <link rel="stylesheet" href="style.css">
+
 </head>
 
 <body>
@@ -17,8 +20,8 @@
     <!-- Header Part -->
     <header class="container mb-5">
         <!-- Navbar Part -->
-        <nav class="navbar navbar-expand-lg bg-light">
-            <div class="container mb-5">
+        <nav class="navbar navbar-expand-lg fixed-top bg-light">
+            <div class="container gy-5">
                 <a class="navbar-brand" href="#">
                     <img src="images/logo.png" alt="">
                 </a>
@@ -32,13 +35,13 @@
                             <a class="nav-link active" aria-current="page" href="#">Home</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="#">Shoes</a>
+                            <a class="nav-link" href="#shoes">Shoes</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="#">Bagpacks</a>
+                            <a class="nav-link" href="#bags">Bagpacks</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="#">Subscribe</a>
+                            <a class="nav-link" href="#subscribe">Subscribe</a>
                         </li>
 
                     </ul>
@@ -47,7 +50,7 @@
         </nav>
 
         <!-- Top Carousel Part -->
-        <div id="carouselExampleControls" class="carousel slide mt-5 bg-info rounded-4" data-bs-ride="carousel">
+        <div id="carouselExampleControls" class="carousel slide mt-5 panda-bg-info rounded-4" data-bs-ride="carousel">
             <div class="carousel-inner">
                 <div class="carousel-item active">
                     <div class="row">
@@ -57,7 +60,7 @@
                                 <p>This is the best headphone in the world for people who just want to waste time in
                                     front of funky world.</p>
                                 <h1>$420</h1>
-                                <div class="btn btn-danger">Buy</div>
+                                <div class="btn panda-buy-btn">Buy</div>
                             </div>
                         </div>
                         <div class="col-lg-5 p-5">
@@ -73,7 +76,7 @@
                                 <p>This is the best tv in the world for people who just want to waste time in front of
                                     tv.</p>
                                 <h1>$1200</h1>
-                                <div class="btn btn-danger">Buy</div>
+                                <div class="btn panda-buy-btn">Buy</div>
                             </div>
                         </div>
                         <div class="col-lg-5 p-5">
@@ -89,7 +92,7 @@
                                 <p>This is the best x-box in the world for people who just want to waste time in front
                                     of fake sports.</p>
                                 <h1>$600</h1>
-                                <div class="btn btn-danger">Buy</div>
+                                <div class="btn panda-buy-btn">Buy</div>
                             </div>
                         </div>
                         <div class="col-lg-5 p-5">
@@ -114,9 +117,10 @@
 
     <!-- Main Part -->
     <main>
+
         <!-- Catagories of product -->
         <div class="container text-center my-5">
-            <div class="row g-5">
+            <div class="row g-5 catagories">
                 <div class="col-lg-4 col-md-6 col-sm-12">
                     <div class="p-3 border bg-warning rounded-3 d-flex align-items-center justify-content-around">
                         <h1>Watch</h1>
@@ -142,12 +146,12 @@
 
         <!-- Cards of the Website -->
         
-        <section class="container my-5">
+        <section class="container my-5" id="shoes">
             
             <!-- Shoes cards -->
             <h2>Shoes</h2>
             <div class="row row-cols-1 row-cols-md-3 g-4">
-                <div class="col">
+                <div class="col-lg-4 col-md-6 col-sm-12">
                     <div class="card shadow-lg">
                         <img src="images/shoes/shoe-1.png" class="card-img-top" alt="...">
                         <div class="card-body">
@@ -156,11 +160,11 @@
                                 additional content. This content is a little bit longer.</p>
                             <br>
                             <h5>$120</h5>
-                            <button type="button" class="btn btn-danger">Buy Now >></button> 
+                            <button type="button" class="btn panda-buy-btn">Buy Now >></button> 
                         </div>
                     </div>
                 </div>
-                <div class="col">
+                <div class="col-lg-4 col-md-6 col-sm-12">
                     <div class="card shadow-lg">
                         <img src="images/shoes/shoe-2.png" class="card-img-top" alt="...">
                         <div class="card-body">
@@ -169,20 +173,20 @@
                                 additional content. This content is a little bit longer.</p>
                             <br>
                             <h5>$320</h5>  
-                            <button type="button" class="btn btn-danger">Buy Now >></button>  
+                            <button type="button" class="btn panda-buy-btn">Buy Now >></button>  
                         </div>
                     </div>
                 </div>
-                <div class="col">
+                <div class="col-lg-4 col-md-6 col-sm-12">
                     <div class="card shadow-lg">
                         <img src="images/shoes/shoe-3.png" class="card-img-top" alt="...">
                         <div class="card-body">
                             <h5 class="card-title">Red Airmax</h5>
                             <p class="card-text">This is a longer card with supporting text below as a natural lead-in to
-                                additional content.</p>
+                                additional content. This content is a little bit longer.</p>
                             <br>
                             <h5>$350</h5>
-                            <button type="button" class="btn btn-danger">Buy Now >></button>
+                            <button type="button" class="btn panda-buy-btn">Buy Now >></button>
                         </div>
                     </div>
                 </div>
@@ -190,12 +194,12 @@
             </div>
         </section>
 
-        <section class="container my-5">
+        <section class="container my-5" id="bags">
             
             <!-- Bagpacks card -->
             <h2>Bagpacks</h2>
             <div class="row row-cols-1 row-cols-md-3 g-4">
-                <div class="col">
+                <div class="col-lg-4 col-md-6 col-sm-12">
                     <div class="card shadow-lg">
                         <img src="images/bags/bag-1.png" class="card-img-top" alt="...">
                         <div class="card-body">
@@ -204,11 +208,11 @@
                                 additional content. This content is a little bit longer.</p>
                             <br>
                             <h5>$120</h5>
-                            <button type="button" class="btn btn-danger">Buy Now >></button> 
+                            <button type="button" class="btn panda-buy-btn">Buy Now >></button> 
                         </div>
                     </div>
                 </div>
-                <div class="col">
+                <div class="col-lg-4 col-md-6 col-sm-12">
                     <div class="card shadow-lg">
                         <img src="images/bags/bag-2.png" class="card-img-top" alt="...">
                         <div class="card-body">
@@ -217,20 +221,20 @@
                                 additional content. This content is a little bit longer.</p>
                             <br>
                             <h5>$320</h5>  
-                            <button type="button" class="btn btn-danger">Buy Now >></button>  
+                            <button type="button" class="btn panda-buy-btn">Buy Now >></button>  
                         </div>
                     </div>
                 </div>
-                <div class="col">
+                <div class="col-lg-4 col-md-6 col-sm-12">
                     <div class="card shadow-lg">
                         <img src="images/bags/bag-3.png" class="card-img-top" alt="...">
                         <div class="card-body">
                             <h5 class="card-title">Black Kaltu Bag</h5>
                             <p class="card-text">This is a longer card with supporting text below as a natural lead-in to
-                                additional content.</p>
+                                additional content. This content is a little bit longer.</p>
                             <br>
                             <h5>$350</h5>
-                            <button type="button" class="btn btn-danger">Buy Now >></button>
+                            <button type="button" class="btn panda-buy-btn">Buy Now >></button>
                         </div>
                     </div>
                 </div>
@@ -238,12 +242,12 @@
             </div>
         </section>
 
-        <section class="bg-info container d-flex justify-content-center align-items-center rounded-4 my-5 p-5">
+        <section class="container panda-bg-info d-flex justify-content-center align-items-center rounded-4 my-5 p-5" id="subscribe">
             <div>
                 <H2>LET'S STAY IN TOUCH</H2>
             <p>Get updates on sales, specials and more</p>
             <input type="text">
-            <button class="btn btn-danger" type="submit">SUBMIT</button>
+            <button class="btn panda-buy-btn" type="submit">SUBMIT</button>
             </div>
         </section>
     </main>
